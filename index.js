@@ -47,6 +47,10 @@ function addGamesToPage(games) {
             <p>${games[i].description}</p>
         `;
 
+        newDiv.addEventListener('click', () => {
+            showPopup(games[i]);
+        });
+
         // append the game to the games-container
         gamesContainer.appendChild(newDiv);
     }
@@ -195,3 +199,36 @@ runnerUp.innerHTML = `
     <h2>${secondGame.name}</h2>
 `;
 secondGameContainer.appendChild(runnerUp);
+
+/************************************************************************************
+ * Optional Features: Pop-up game details
+ */
+ 
+function showPopup(game) {
+    const popup = document.getElementById("popup-container");
+    const popupBody = document.getElementById("popup-body");
+
+    popupBody.innerHTML = `
+        <img class="game-img" src="${game.img}" alt="${game.name}" />
+        <h2>${game.name}</h2>
+        <p><strong>Description: </strong>${game.description}</p>
+        <p><strong>Pledge: </strong>${game.pledged.toLocaleString()}</p>
+        <p><strong>Goal: </strong>${game.goal.toLocaleString()}</p>
+        <p><strong>Backers: </strong>${game.backers.toLocaleString()}</p>
+    `;
+
+    popup.style.display = "flex";
+}
+
+const closePopupBtn = document.getElementById("close-popup");
+closePopupBtn.addEventListener(`click`, () => {
+    const popup = document.getElementById("popup-container");
+    popup.style.display = "none";
+});
+
+window.addEventListener(`click`, (event) => {
+    const popup = document.getElementById("popup-container");
+    if (event.target === popup) {
+        popup.style.display = "none";
+    }
+});

@@ -1,32 +1,41 @@
-# WEB102 Prework - *Name of App Here*
+# WEB102 Prework - *Sea Monster Crowdfunding*
 
-Submitted by: **Your Name Here**
+Submitted by: **Chenilyn Joy Espineda**
 
-**Name of your app** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
+**Sea Monster Crowdfunding** is a website for the company Sea Monster Crowdfunding that displays information about the games they have funded.
 
-Time spent: **X** hours spent in total
+Time spent: **4** hours spent in total!
 
-## Required Features
+## Features
 
-The following **required** functionality is completed:
+### Introduction Section:
+*  ✅ Explains the background of the company and how many games remain unfunded.
 
-* [ ] The introduction section explains the background of the company and how many games remain unfunded.
-* [ ] The Stats section includes information about the total contributions and dollars raised as well as the top two most funded games.
-* [ ] The Our Games section initially displays all games funded by Sea Monster Crowdfunding
-* [ ] The Our Games section has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+### Stats Section:
+*  ✅ Includes information about the total contributions and dollars raised.
+*  ✅ Displays the two top most funded games.
+
+### Our Games Section:
+*  ✅ Initially displays all games funded by Sea Monster Crowdfunding.
+*  ✅ Has three buttons that allow the user to display only unfunded games, only funded games, or all games.
+
+## Added Features
 
 The following **optional** features are implemented:
 
-* [ ] List anything else that you can get done to improve the app functionality!
+*  ✅ Interactive Game Cards: Clicking on the game cards opens a pop-up displaying more detailed information about the selected game (e.g., description, funding goal, amount pledge, number of backers).
+*  ✅ Close Pop-Up Options: Users can close the pop-up by clicking a visible "x" button or clicking outside of the pop-up.
+*  ✅ Top 2 Funded Games Highlighted with Images: The most funded games are displayed with their respective images for better visualization.
+*  ✅ Hover Effect on Buttons: Added a hover effect to the buttons in the "Our Games" section. 
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented features:
 
-<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='/assets/WEB102_Walkthrough.gif' title='Video Walkthrough' width='600' alt='Video Walkthrough' />
 
 <!-- Replace this with whatever GIF tool you used! -->
-GIF created with ...  
+GIF created with [Kap](https://getkap.co/)
 <!-- Recommended tools:
 [Kap](https://getkap.co/) for macOS
 [ScreenToGif](https://www.screentogif.com/) for Windows
@@ -34,11 +43,19 @@ GIF created with ...
 
 ## Notes
 
-Describe any challenges encountered while building the app.
+### Challenges Encountered:
+1. Understanding and implementing reduce for calculating total contributions and money raised.
+2. Debugging DOM manipulation when dynamically creating game cards.
+
+### Lessons Learned:
+1. Mastered the use of filter, reduce, spread, and destructuring.
+2. Improved knowledge of DOM manipulation with dynamic content.
+3. Enchanced understading of javaScript.
+
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright 2025 Chenilyn Joy Espineda
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
